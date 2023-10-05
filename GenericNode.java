@@ -28,9 +28,14 @@ class GenericNode<T> {
 	/**
 	 * @return the GenericNode
 	 */
-	public GenericNode<T> getGenericNode() {
+	public GenericNode<?> getGenericNode() {
 		return this;
 	}//end
+	
+	public GenericNode<?> getNextGenericNode() {
+		return nextGenericNode;
+	}
+	
 	/**
 	 * @param nextGenericNode the nextGenericNode to be set
 	 */
